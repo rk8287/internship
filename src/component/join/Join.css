@@ -1,0 +1,58 @@
+.join{
+    padding: 7% 10%;
+    background: #F2FAF5;
+
+}
+
+.joinC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.joinC .p1{
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 600;
+line-height: 18px;
+text-align: left;
+color: #63B178;
+margin-bottom: 20px;
+
+}
+
+.joinC .h3{
+    font-family: Poppins;
+font-size: 32px;
+font-weight: 600;
+line-height: 48px;
+text-align: left;
+margin-bottom: 20px;
+
+}
+.joinC .p2{
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+line-height: 18px;
+text-align: center;
+color: #5D5D5D;
+margin-bottom: 30px;
+
+}
+
+.joinC button{
+    width: Fixed (196px)px;
+height: Hug (34px)px;
+top: 2800px;
+left: 622px;
+padding: 10px 38px 10px 38px;
+gap: 9px;
+border-radius: 7px;
+color: #fff;
+opacity: 0px;
+ background: #080404;
+;
+
+}
