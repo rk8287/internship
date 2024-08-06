@@ -6,7 +6,7 @@ const Group = require('../assets/images/Group.png');
 
 const PaymentForm = () => {
   return (
-    <div className="container mx-auto p-4 h-[80vh] flex flex-col justify-center">
+    <div className="container mx-auto p-4 h-[100%] flex flex-col justify-center">
       <div className="flex flex-col md:flex-row w-full h-full">
         <div className="md:w-1/2 p-4 flex flex-col justify-center">
           <h2 className="text-xl font-bold mb-2">SELECT PAYMENT METHOD</h2>

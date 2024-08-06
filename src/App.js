@@ -1,5 +1,5 @@
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Faq from "./component/faq/Faq";
 import Footer from "./component/footer/Footer";
 import Header from "./component/header/Header";
@@ -17,7 +17,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Home />} />
         <Route path="/hiw" element={<Hiw />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/faq" element={<Faq />} />
@@ -26,9 +26,22 @@ function App() {
         <Route path="/paymentForm" element={<PaymentFormI />} />
         <Route path="/paymentMethod" element={<SelectPaymentMethod />} />
       </Routes>
-      <Footer />
+      <ConditionalFooter />
     </Router>
   );
+}
+
+function ConditionalFooter() {
+  const location = useLocation();
+  // List of routes where footer should be hidden
+  const hiddenFooterRoutes = ['/paymentMethod', '/paymentForm'];
+
+  // Check if the current route is in the list of routes to hide the footer
+  if (hiddenFooterRoutes.includes(location.pathname)) {
+    return null;
+  }
+
+  return <Footer />;
 }
 
 export default App;

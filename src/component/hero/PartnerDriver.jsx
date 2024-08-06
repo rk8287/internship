@@ -1,5 +1,6 @@
 import React from "react";
 import "./PartnerDriverPage.css";
+import { Link } from "react-router-dom";
 
 const PartnerDriverPage = () => {
   return (
@@ -25,7 +26,7 @@ const PartnerDriverPage = () => {
             you'll enjoy flexible work hours, competitive earnings, and the
             satisfaction of delivering smiles across the city.
           </p>
-          <button>Register now for just Rs. 999!</button>
+         <Link to={'/paymentMethod'}> <button>Register now for just Rs. 999!</button></Link>
         </div>
         <div className="features">
           <div className="feature">
